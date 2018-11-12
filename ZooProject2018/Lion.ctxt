@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Lion
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Lion\ here.\r\n\r\n\ @author\ HGomez\r\n\ @version\ 2018/11/12\r\n
+comment1.params=
+comment1.target=Lion()
+comment2.params=newTypeOfLion\ newLength\ newGender\ newSound
+comment2.target=Lion(java.lang.String,\ int,\ java.lang.String,\ java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getType()
+comment4.params=newType
+comment4.target=void\ setType(java.lang.String)
+numComments=5
