@@ -39,6 +39,8 @@ public class Lion
       typeOfLion = newType;
   }
   
+ 
+  
   //more getters and setters needed
   
   public String LookingForFood;

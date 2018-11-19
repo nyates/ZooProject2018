@@ -2,32 +2,44 @@
 /**
  * Write a description of class Monkey here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author HGomez
+ * @version 2018/11/13
  */
 public class Monkey
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Monkey
-     */
+    private String typeOfMonkey;
+    private int height;
+    private String gender;
+    private int averageLife;
+    private double bodyMass;
+    
     public Monkey()
     {
-        // initialise instance variables
-        x = 0;
+    typeOfMonkey = "unkown";
+    height = 65;
+    gender = "unkown";
+    averageLife = 20;
+    bodyMass = 3.9;
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
+    
+    public Monkey(String newTypeOfMonkey, int newHeight, String newGender, int newAverageLife, double newBodyMass)
     {
-        // put your code here
-        return x + y;
+    typeOfMonkey = newTypeOfMonkey;
+    height = newHeight;
+    gender = newGender;
+    averageLife = newAverageLife;
+    bodyMass = newBodyMass;
     }
+    
+    public String getType()
+    {
+        return typeOfMonkey;
+    }
+    
+    public void setType(String newType)
+    {
+        typeOfMonkey = newType;
+    }
+    
+    
 }
