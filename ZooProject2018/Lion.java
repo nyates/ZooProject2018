@@ -21,12 +21,12 @@ public class Lion
       
   }
   
-  public Lion(String newTypeOfLion, int newLength, String newGender, String newSound)
+  public Lion(String newTypeOfLion, int newLength, String newGender, String newSoundMade)
   {
   typeOfLion = newTypeOfLion;
   length = newLength;
   gender = newGender;
-  soundMade = newSound;  
+  soundMade = newSoundMade;  
   }
   
   public String getType()
@@ -39,12 +39,41 @@ public class Lion
       typeOfLion = newType;
   }
   
+  public int getLength()
+  {
+      return length;
+  }
+  
+  public void setLength(int newLength)
+  {
+      length = newLength;
+  }
+  
+  public String getGender()
+  {
+      return gender;
+  }
+  
+  public void setGender(String newGender)
+  {
+      gender = newGender;
+  }
+  
+  public String getSoundMade()
+  {
+      return soundMade;
+  }
+  
+  public void setSoundMade(String newSoundMade)
+  {
+      soundMade = newSoundMade;
+  }
  
   
-  //more getters and setters needed
   
-  public String LookingForFood;
+  
+  public String LookingForFood()
   {
-      
+    return "the lions hunt their prey very carefully and then attack their prey when it is preventd.";
   }
 }

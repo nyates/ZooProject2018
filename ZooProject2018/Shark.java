@@ -45,4 +45,14 @@ public class Shark
     {
         return "Sharks sleep while swimming forward.";
     }
+    
+    public String eat()
+    {
+        return "The shark devours anything it can catch";
+    }
+    
+    public String makeSound()
+    {
+        return "The shark says: " + soundMade;
+    }
 }

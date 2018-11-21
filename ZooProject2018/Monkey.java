@@ -41,5 +41,50 @@ public class Monkey
         typeOfMonkey = newType;
     }
     
+    public int getHeight()
+    {
+        return height;
+    }
+    
+    public void setHeight(int newHeight)
+    {
+        height = newHeight;
+    }
+    
+    public String getGender()
+    {
+        return gender;
+    }
+    
+    public void setGender(String newGender)
+    {
+        gender = newGender;
+    }
+    
+    public int getAverageLife()
+    {
+        return averageLife;
+    }
+    
+    public void setAverageLife(int newAverageLife)
+    {
+        averageLife = newAverageLife;
+    }
+    
+    public double setBodyMass()
+    {
+        return bodyMass;
+    }
+    
+    public void setBodyMass(double newBodyMass)
+    {
+        bodyMass = newBodyMass;
+    }
+    
+    
+    
+    
+    
+    
     
 }
