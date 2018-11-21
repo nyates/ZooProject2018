@@ -2,32 +2,87 @@
 /**
  * Write a description of class Dog here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author HGomez
+ * @version 2018/11/19
  */
 public class Dog
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Dog
-     */
+    private String typeOfDog;
+    private String raceOfDog;
+    private String gender;
+    private int height;
+    private int averageLife;
+    
     public Dog()
     {
-        // initialise instance variables
-        x = 0;
+    typeOfDog = "unkown";
+    raceOfDog = "unkown";
+    gender = "unkown";
+    height = 15;
+    averageLife = 13;
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
+    
+    public Dog(String newTypeOfDog, String newRaceOfDog, String newGender, int newHeight, int newAverageLife)
     {
-        // put your code here
-        return x + y;
+    typeOfDog = newTypeOfDog;
+    raceOfDog = newRaceOfDog;
+    gender = newGender;
+    height = newHeight;
+    averageLife = newAverageLife;
     }
+    
+    public String getType()
+    {
+        return typeOfDog;
+    }
+    
+    public void setType(String newType)
+    {
+        typeOfDog = newType;
+    }
+    
+    public String getRace()
+    {
+        return raceOfDog;
+    }
+    
+    public void setRace(String newRace)
+    {
+        raceOfDog = newRace;
+    }
+    
+    public String getGender()
+    {
+        return gender;
+    }
+    
+    public void setGender(String newGender)
+    {
+        gender = newGender;
+    }
+    
+    public int getHeight()
+    {
+        return height;
+    }
+    
+    public void setHeight(int newHeight)
+    {
+        height = newHeight;
+    }
+    
+    public int getAverageLife()
+    {
+        return averageLife;
+    }
+    
+    public void setAverageLife(int newAverageLife)
+    {
+        averageLife = newAverageLife;
+    }
+    
+    
 }
+
+
+
