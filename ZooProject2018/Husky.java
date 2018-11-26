@@ -5,7 +5,7 @@
  * @author (kumlachew)
  * @version (11/20/19)
  */
-public class Husky
+public class Husky extends Dog
 {
     private int speed;
     private String temperament;
@@ -51,7 +51,7 @@ public class Husky
     {
         color = newColor;
     }
-    public String unique()
+    public String getUnique()
     {
         return "Huskies are born to run, A group saved a small town in Alaska, They're not great watchdogs, Huskies don't get fatigued";
     }
