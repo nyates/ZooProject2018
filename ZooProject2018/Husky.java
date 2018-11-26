@@ -1,3 +1,5 @@
+package ZooProject2018;
+
 
 /**
  * Write a description of class Husky here.
@@ -15,8 +17,8 @@ public class Husky
     public Husky()
     {
         speed = 0;
-        temperament = "uknown";
-        color = "uknown";
+        temperament = "unknown";
+        color = "unknown";
         height = 0.0;
     }
     public Husky(int theSpeed, String theTemperament, String theColor, int theHeight)
