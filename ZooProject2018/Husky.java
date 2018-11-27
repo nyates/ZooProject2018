@@ -1,6 +1,4 @@
 package ZooProject2018;
-
-
 /**
  * Write a description of class Husky here.
  *
@@ -9,57 +7,30 @@ package ZooProject2018;
  */
 public class Husky extends Dog
 {
-    private int speed;
-    private String temperament;
-    private String color;
-    private double height;
-    
+   
+
+    private String personality;
     public Husky()
     {
-        speed = 0;
-        temperament = "unknown";
-        color = "unknown";
-        height = 0.0;
+      super("unkown","unkown","unkown",0,0);
+      personality = "unkown";
     }
-    public Husky(int theSpeed, String theTemperament, String theColor, int theHeight)
+    public Husky(String theTypeOfDog, String theRaceOfDog, String theGender, int theHeight, int theAverageLife)
     {
-        speed = theSpeed;
-        temperament = theTemperament;
-        color = theColor;
-        height = theHeight;        
-        
+      super(theTypeOfDog, theRaceOfDog, theGender, theHeight, theAverageLife);
+      personality = "intelligent, outgoing, alert, friendly, and gentle";
+
     }
-    public int getSpeed()
+    public String getPersonality()
     {
-        return speed;
+      return personality;
     }
-    public void setSpeed(int newSpeed)
+    public void setpPrsonality(String newPersonality)
     {
-        speed = newSpeed;
+      personality = newPersonality;
     }
-    public String getTemperament()
-    {
-        return temperament;
-    }
-    public void setTemperament(String newTemperament)
-    {
-        temperament = newTemperament;
-    }
-    public String getColor()
-    {
-        return color;
-    }
-    public void setColor(String newColor)
-    {
-        color = newColor;
-    }
-    public String getUnique()
-    {
-        return "Huskies are born to run, A group saved a small town in Alaska, They're not great watchdogs, Huskies don't get fatigued";
-    }
-    
-    
-    
-    
+    // @Override
+    //public int
+    // herbert need to make 3 method so that i can Override it.
 
 }
