@@ -11,15 +11,24 @@ public class HammerheadShark extends Shark
     
     public HammerheadShark()
     {
-        super("Hammerhead Shark", 1, 
-            "unknown", "My head is a hammer");
-        speed = 0;
+        super("My head looks like a hammer");
+        setType("hammerhead shark");
+        speed = 25;
     }
     
-    public HammerheadShark(int newLength, String newGender)
+    public HammerheadShark(String newDescription)
     {
-        super("Hammerhead Shark", newLength, 
-            newGender, "My head is a hammer");
+        super(newDescription);
+        setType("hammerhead shark");
+        speed = 25;
+    }
+    
+    public HammerheadShark(int newSize, String newGender, 
+            int newLifespan, String newDescription,
+            String newSound)
+    {
+        super(newSize, newGender, newLifespan, newDescription);
+        setType("hammerhead shark");
         speed = 25;
     }
     
