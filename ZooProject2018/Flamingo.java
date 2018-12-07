@@ -1,19 +1,19 @@
 
 /**
- * Write a description of class Otter here.
+ * Write a description of class Flamingo here.
  *
- * @author (Avalon Mann)
- * @version (11/19/20)
+ * @author (your name)
+ * @version (a version number or a date)
  */
-public class Otter
+public class Flamingo extends Animal
 {
-   private String sound;
-   private int size;
+    private int size;
    private int weight;
    private String gender;
    private String country;
    private int age;
-   public Otter()
+   private String sound;
+   public Flamingo()
    {
        sound = "unknown";
        size = 1;
@@ -22,7 +22,7 @@ public class Otter
        country = "unknown";
        age = 0;
    }
-   public Otter(String theSound, int theSize, int theWeight, String theGender, String theCountry, int theAge)
+   public Flamingo(String theSound, int theSize, int theWeight, String theGender, String theCountry, int theAge, String theAnimal)
    {
        sound = theSound;
        size = theSize;
@@ -67,7 +67,7 @@ public class Otter
    {
        weight = newWeight;
    }
-   public void setGender(String newGender)
+    public void setGender(String newGender)
    {
        gender = newGender;
    }
@@ -79,19 +79,31 @@ public class Otter
    {
        age = newAge;
    }
+   public String species()
+   {
+       return "flamingo";
+   }
+   @Override
    public String habitat()
    {
-       return "Otters can be found all over the world in almost any wet" 
-       + "habitat: oceans, rivers, lakes, coatlines, and marshes.";
-       
+       return "Flamingos live near shallow bodies of water.";
    }
-   public String diet()
+   @Override
+   public String eat()
    {
-       return "They are carnivores. They eat things like slow moving fish, frogs, eggs, crabs, sea urchin,"
-       + "clams, mussels, etc.";
+       return "They are carnivores. They eat things like wild boar, watter bufffalo, sambar.";
    }
    public int lifespan()
    {
-       return 17;
+       return 30;
+   }
+   public String description()
+   {
+       return "Flamingos appear nice until you really look at them. Those legs. That neck. Why, evoloution, why.";
+   }
+   @Override
+   public String makeSound()
+   {
+       return "The flamingo lets out a squawk. Honestly, it's kind of funny.";
    }
 }

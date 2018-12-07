@@ -7,9 +7,20 @@
  */
 public class BengalTiger extends Tiger
 {
-   private String sound;
-   private int size;
-   private int weight;
-   
-   
+    int speed;
+    public BengalTiger(int theSize, int theWeight, String theGender, String theCountry, int theAge)
+    {
+        super("roar", theSize, theWeight, theGender,  theCountry, theAge);
+    }
+    
+    @Override
+    public int lifespan()
+    {
+        return 15;
+    }
+    
+    public void setSpeed(int newSpeed)
+    {
+        speed = newSpeed;
+    }
 }

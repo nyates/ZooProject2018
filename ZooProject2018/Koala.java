@@ -1,19 +1,19 @@
 
 /**
- * Write a description of class Otter here.
+ * Write a description of class Koala here.
  *
- * @author (Avalon Mann)
- * @version (11/19/20)
+ * @author (your name)
+ * @version (a version number or a date)
  */
-public class Otter
+public class Koala extends Animal
 {
-   private String sound;
-   private int size;
+    private int size;
    private int weight;
    private String gender;
    private String country;
    private int age;
-   public Otter()
+   private String sound;
+   public Koala()
    {
        sound = "unknown";
        size = 1;
@@ -22,7 +22,7 @@ public class Otter
        country = "unknown";
        age = 0;
    }
-   public Otter(String theSound, int theSize, int theWeight, String theGender, String theCountry, int theAge)
+   public Koala(String theSound, int theSize, int theWeight, String theGender, String theCountry, int theAge)
    {
        sound = theSound;
        size = theSize;
@@ -67,7 +67,7 @@ public class Otter
    {
        weight = newWeight;
    }
-   public void setGender(String newGender)
+    public void setGender(String newGender)
    {
        gender = newGender;
    }
@@ -79,19 +79,32 @@ public class Otter
    {
        age = newAge;
    }
+   public String species()
+   {
+       return "koala";
+   }
+   @Override
    public String habitat()
    {
-       return "Otters can be found all over the world in almost any wet" 
-       + "habitat: oceans, rivers, lakes, coatlines, and marshes.";
-       
+       return "Koalas are native to eastern Australia.";
    }
-   public String diet()
+   @Override
+   public String eat()
    {
-       return "They are carnivores. They eat things like slow moving fish, frogs, eggs, crabs, sea urchin,"
-       + "clams, mussels, etc.";
+       return "They are herbivores. They eat mainly eucalyptus leaves, and an adult koala eats between 200 t 500 grams of leaves per day.";
    }
    public int lifespan()
    {
        return 17;
+   }
+   public String description()
+   {
+       return "Koalas appear cute and adorable, but they live in AUSTRALIA. Land of spiders as big as your hand and where 2-3 months out of the year magpies will randomly swoop down and try"+
+       "To attack you. They live in the place Mother Nature calls 'The Reject Pile'. And the koala has survived. They are dangerous.";
+   }
+   @Override
+   public String makeSound()
+   {
+       return "The koala bellows- wow that is loud for a tiny little thing.";
    }
 }
