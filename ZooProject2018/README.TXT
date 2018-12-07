@@ -8,5 +8,5 @@ PROJECT TITLE: Zoo Project
 PURPOSE OF PROJECT: Learn Inheritance, Abstract Classes, Interfaces, & Polymorphism
 VERSION or DATE: 2018/11/12
 HOW TO START THIS PROJECT: git clone from remote repo
-AUTHORS: N Yates, H Gomez Perez, K Hirgeto
+AUTHORS: N Yates, H Gomez Perez, K Hirgeto, A Mann
 USER INSTRUCTIONS: N/A

@@ -1,4 +1,4 @@
-package ZooProject2018;
+
 /**
  * Write a description of class Husky here.
  *
@@ -12,12 +12,12 @@ public class Husky extends Dog
     private String personality;
     public Husky()
     {
-      super("unkown","unkown","unkown",0,0);
+      super("unkown","unkown",0,0);
       personality = "unkown";
     }
-    public Husky(String theTypeOfDog, String theRaceOfDog, String theGender, int theHeight, int theAverageLife)
+    public Husky(String theTypeOfDog, String theGender, int theHeight, int theAverageLife)
     {
-      super(theTypeOfDog, theRaceOfDog, theGender, theHeight, theAverageLife);
+      super(theTypeOfDog, theGender, theHeight, theAverageLife);
       personality = "intelligent, outgoing, alert, friendly, and gentle";
 
     }

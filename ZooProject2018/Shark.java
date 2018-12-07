@@ -5,28 +5,40 @@
  * @author NYates
  * @version 2018/11/12
  */
-public class Shark
+public class Shark extends Animal
 {
     private String typeOfShark;
-    private int length;
-    private String gender;
     private String soundMade;
-    
+         
     public Shark()
     {
+        super();
         typeOfShark = "unkown";
-        length = 1;
-        String gender = "unknown";
-        String soundMade = "I'm going to eat you";
+        soundMade = "I'm going to eat you";
     }
     
-    public Shark(String newTypeOfShark, int newLength, 
-        String newGender, String newSound)
+    public Shark(String newDescription)
     {
+        super(newDescription);
+        typeOfShark = "unkown";
+        soundMade = "I'm going to eat you";
+    }
+    
+    public Shark(int newSize, String newGender, 
+            int newLifespan, String newDescription)
+    {
+        super(newSize, newGender, newLifespan, newDescription);
+        typeOfShark = "unkown";
+        soundMade = "I'm going to eat you";
+    }
+    
+    public Shark(int newSize, String newGender, 
+            int newLifespan, String newDescription,
+            String newTypeOfShark, String newSound)
+    {
+        super(newSize, newGender, newLifespan, newDescription);
         typeOfShark = newTypeOfShark;
-        length = newLength;
-        String gender = newGender;
-        String soundMade = newSound;
+        soundMade = newSound;
     }
     
     public String getType()
@@ -39,20 +51,36 @@ public class Shark
         typeOfShark = newType;
     }
     
-    // more getters and setters needed
+    public String getSound()
+    {
+        return soundMade;
+    }
+    
+    public void setSound(String newSound)
+    {
+        soundMade = newSound;
+    }
     
     public String sleep()
     {
         return "Sharks sleep while swimming forward.";
     }
     
+    @Override
     public String eat()
     {
         return "The shark devours anything it can catch";
     }
     
+    @Override
     public String makeSound()
     {
-        return "The shark says: " + soundMade;
+        return "The shark says: " + getSound();
+    }
+    
+    @Override
+    public String habitat()
+    {
+        return "The shark swims and lives in the ocean.";
     }
 }
